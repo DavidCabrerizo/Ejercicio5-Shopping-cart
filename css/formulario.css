@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+main {
+    flex: 1; 
+}
+
+body {
+    background-color: #FFDDD2;
+    font-family: 'Khand', sans-serif;
+    
+}
+
+.formularioPrincipal{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 120px;
+    margin-left: -190px;   
+    width: auto;    
+}
+
+.formularioPrincipal label {
+    margin-left:10px;
+   
+}
+
+.formLoading {
+    width: 200px;
+    
+    
+}
+
+.formLoading h1{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    
+    
+}
+
+.form-control {
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: #FFDDD2;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font:weight 200px;
+}
+
+.form-control input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+    padding: auto;
+    background-color: #FFDDD2;
+    margin: 10px;
+}
+
+.form-control input:focus{
+    background-color: #FFDDD2;
+    outline: none;
+    
+}
+
+.form-control input::placeholder {
+    color: #FFDDD2;
+    background-color: #FFDDD2
+}
+
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500px;
+    text-align: right;
+    color: rgb(255, 0, 0);
+
+}
+
+.check input {
+    margin-left: 10px;
+    display: block;
+    padding: 90px;
+    
+    
+}
+
+.formCheck {
+    display: flex;
+    align-items: flex-end;
+    font-size: 13px;
+}
+
+.formCheck label {
+
+    margin-left: -3px;
+}
+
+
+.formCheck input{
+    width: 10px;
+}
+
+#formulario1 button {
+    background-color: #83C5BE;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border:none;
+
+}
+
+#formulario1 button:hover {
+    background-color: #e29578;
+}
+
+
+.form-control.falla input{
+    border-color: rgb(245, 10, 10);
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.form-control.ok input{
+    border-color: rgb(12, 231, 23);
+    border-radius: 5px;
+}
+
+.form-control.falla p {
+    visibility: visible;
+}
+
+.formNombre{
+    display: flex;
+    gap: 20px;
+}   
+
+.formCorreo{
+    display: flex;
+    gap: 20px;
+}
+
+.formPass{
+    display: flex;
+    gap: 20px;
+}
+
+.formRegistro h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.form2 input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    font-size: 12px;
+    padding: auto;
+    background-color: #FFDDD2;
+    width: 100%;
+    margin: 10px;
+}
+
+.form2 input:focus{
+    background-color: #FFDDD2;
+    outline: none;
+    
+}
+
+.form2 input::placeholder {
+    color: rgb(243, 181, 210); 
+    background-color: #FFDDD2; 
+}
+
+.labelCheckbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.labelCheckbox label {
+    margin-left: -10px;
+}
+.labelCheckbox input {
+    
+    width: 20px;
+}
+
+.formRegistro button {
+    background-color: #83C5BE;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.formRegistro button:hover {
+    background-color: #e29578;
+}
+
+/* Estilos De la NavBar */
+
+header {
+    background-color: #006d77;
+}
+.brand-name {
+    font-size: 3rem;
+}
+
+.container-fluid {
+    background-color: #006d77;
+    justify-content: flex-end;
+}
+.navbar-brandt {
+    font-size: 2rem;
+    text-decoration: none;
+}
+/* Cambiar el tamaño de la fuente del texto de la barra de navegación */
+.navbar a.navbar-brand,
+.navbar a.nav-link {
+    font-size: 1rem; /* Tamaño de fuente personalizado */
+    color:#edf6f9
+}
+
+.navbar-brandt {
+    color:#fff;
+}
+
+.navbar-nav {
+    margin-left: 1rem;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    
+}
+
+
+/* Agrega estos estilos a tu archivo CSS existente */
+
+/* Estilos para el enlace de la barra de navegación */
+.navbar-brand:hover,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #E29578; /* Cambia el color al pasar el cursor */
+}
+
+
+/* Estilos footer */
+
+.footer-links a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-links i {
+    vertical-align: middle;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+
+
+.footer-links a:hover,
+.nav-icons a:hover,
+.social-links a:hover {
+    color: #E29578; /* Cambia el color al pasar el cursor */
+}
+
+.footer-links a,
+.social-links a {
+    transition: color 0.3s ease; /* Agrega una transición suave para un efecto más agradable */
+}
+
+@media (max-width:450px){
+
+    .formularioPrincipal {
+        
+        flex-direction: column;
+        align-items: center;
+        margin-left:7vh;
+        align-items: stretch;
+    }
+
+    .formRegistro {        
+        margin-top: -90px;
+    }
+
+    .formRegistro button {
+        width: 80%;
+    }
+
+    .form2 {
+        margin-right: 60px;
+    }
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #FFDDD2;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 50%;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+h5{
+    color: #006d77;
+}
+
+.modal-content{
+    width: fit-content;
+    height: fit-content;
+}

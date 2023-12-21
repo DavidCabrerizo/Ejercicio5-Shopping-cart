@@ -1,0 +1,165 @@
+/* Estilos CSS */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Khand', sans-serif;
+
+}
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+h5{
+    color: #006d77;
+}
+
+.modal-content{
+    width: fit-content;
+    height: fit-content;
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: #ffddd2;
+}
+
+main {
+    flex: 1; 
+}
+
+body {
+    overflow-x: hidden;
+}
+.landingText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-containerL {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image-containerL img {
+
+    height: 30vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+header {
+    background-color: #006d77;
+}
+.brand-name {
+    font-size: 3rem;
+}
+
+.container-fluid {
+    background-color: #006d77;
+    justify-content: flex-end;
+}
+.navbar-brandt {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+/* Cambiar el tamaño de la fuente del texto de la barra de navegación */
+.navbar a.navbar-brand,
+.navbar a.nav-link {
+    font-size: 1rem; /* Tamaño de fuente personalizado */
+    color:#edf6f9
+}
+
+.navbar-nav {
+    margin-left: 1rem;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    
+}
+.product-index{
+    border-radius: 10%;
+    background-color: #E29578 ;
+    font-size: 2rem;
+
+}
+
+/* Agrega estos estilos a tu archivo CSS existente */
+
+/* Estilos para el enlace de la barra de navegación */
+.navbar-brand:hover,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #E29578; /* Cambia el color al pasar el cursor */
+}
+
+
+/* Estilos footer */
+
+.footer-links a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-links i {
+    vertical-align: middle;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+/* Agrega estos estilos a tu archivo CSS existente */
+
+.footer-links a:hover,
+.nav-icons a:hover,
+.social-links a:hover {
+    color: #E29578; /* Cambia el color al pasar el cursor */
+}
+
+.footer-links a,
+.social-links a {
+    transition: color 0.3s ease; /* Agrega una transición suave para un efecto más agradable */
+}
+
+@media (max-width: 435px) {
+    .image-containerL img{
+        height: 30vh;
+        width: 30vh;
+    }
+    .landing{
+        flex-direction: column;
+        margin-bottom: 110px;
+        width: auto;
+    }
+    
+
+    .landingText h1 {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+}
+

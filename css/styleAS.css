@@ -1,0 +1,286 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Khand', sans-serif;
+
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+main {
+    flex: 1; 
+}
+
+body {
+    /* Evitar desplazamiento horizontal */
+    overflow-x: hidden;
+    background-color: #FFDDD2;
+
+}
+
+
+header {
+    background-color: #006d77;
+}
+.brand-name {
+    font-size: 3rem;
+}
+
+.container-fluid {
+    background-color: #006d77;
+    justify-content: flex-end;
+}
+.navbar-brandt {
+    font-size: 2rem;
+}
+
+.navbar-brandt {
+    font-size: 2rem;
+    color: #ffffff; /* O el color que prefieras */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Cambiar el tamaño de la fuente del texto de la barra de navegación */
+.navbar a.navbar-brand,
+.navbar a.nav-link {
+    font-size: 1rem; /* Tamaño de fuente personalizado */
+    color:#edf6f9
+}
+
+.navbar-nav {
+    margin-left: 1rem;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    
+}
+
+
+/*pagina search*/
+/* Estilos para el Campo de Búsqueda */
+#searchBox {
+    margin-top: 20px;
+    border: 2px solid #000000; /* Color de borde acorde a Bootstrap */
+}
+
+/* Estilos para los Resultados de Búsqueda */
+#resultadosBusqueda .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra para las tarjetas */
+    transition: 0.3s; /* Transición suave para el hover */
+}
+
+#resultadosBusqueda .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3); /* Sombra más intensa en hover */
+}
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen cubra el ancho de la tarjeta */
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajustar la imagen para cubrir el espacio asignado */ 
+}
+
+.btsearch {
+    background-color: #006d77; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 2px 10px; /* Padding: arriba/abajo, izquierda/derecha */
+    margin-top: 0.5rem;
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.btsearch:hover {
+    background-color: #E29578; /* Color de fondo del botón al pasar el mouse */
+}
+
+.btsearch:active {
+    background-color: #FFDDD2; /* Color de fondo al hacer clic */
+    box-shadow: 0 2px #666; /* Sombra para dar efecto de presión */
+    transform: translateY(2px); /* Mueve ligeramente el botón hacia abajo */
+}
+
+.pagsearch {
+   
+    padding: 20rem;
+}
+
+/*fin estilos search*/
+
+
+
+
+/*parallax About us*/
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px; /* Ajusta esto según tus necesidades */
+    margin-bottom: 1rem; /* Margen inferior de 1rem */
+}
+
+.texto {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white; /* o el color que prefieras */
+    background-color: rgba(0, 0, 0, 0.5); /* para mejorar la legibilidad del texto */
+}
+
+
+
+.titleabout {
+    font-size: 3rem;
+}
+
+.texto p {
+    padding: 3rem;
+}
+
+/*fin paerallax */
+
+
+
+/* Estilos para el enlace de la barra de navegación */
+.navbar-brand:hover,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #E29578; /* Cambia el color al pasar el cursor */
+}
+
+
+/* Estilos footer */
+
+.footer-links a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-links i {
+    vertical-align: middle;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+/* Agrega estos estilos a tu archivo CSS existente */
+
+.footer-links a:hover,
+.nav-icons a:hover,
+.social-links a:hover {
+    color: #E29578; /* Cambia el color al pasar el cursor */
+}
+
+.footer-links a,
+.social-links a {
+    transition: color 0.3s ease; /* Agrega una transición suave para un efecto más agradable */
+}
+
+/* Agrega estilos adicionales según sea necesario */
+
+h5{
+    color: #006d77;
+}
+
+.modal-content{
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Estilos generales para dispositivos grandes */
+
+/* ... (tu código CSS actual) ... */
+
+/* Media query para dispositivos pequeños (móviles) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 56px;
+    }
+
+    .container-fluid {
+        flex-direction: column-reverse;
+        padding: 0.5rem;
+    }
+
+    .navbar {
+        background-color: #006d77;
+    }
+
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+
+    .navbar a.navbar-brand,
+    .navbar a.nav-link {
+        font-size: 1.5rem;
+    }
+
+    .nav-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    #searchBox {
+        margin-top: 10px;
+    }
+
+    .pagsearch {
+        padding: 1rem;
+    }
+
+    /* Ajustes específicos para las secciones de parallax */
+    .parallax {
+        height: 300px;
+        position: relative;
+    }
+
+    .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 80%;
+        max-width: 400px; /* Ajusta el ancho máximo del texto según tus necesidades */
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .titleabout {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Ajustes específicos para el pie de página */
+    .footer-links,
+    .social-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links a,
+    .social-links a {
+        margin-bottom: 10px;
+    }
+}

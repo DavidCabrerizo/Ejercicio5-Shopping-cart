@@ -44,7 +44,7 @@ let wishlist = [];
 
 
 
-    fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
+    fetch('https://makeup-api.herokuapp.com/api/v1/products.json')
         .then(response => response.json())
     .then(data => {
         loadingGif.style.display = 'none';
